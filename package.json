@@ -17,8 +17,6 @@
     "access": "public"
   },
   "dependencies": {
-    "react-hint": "^3.1.1",
-    "react-lightweight-tooltip": "^1.0.0",
     "styled-components": "1.4.6 - 3"
   },
   "peerDependencies": {
