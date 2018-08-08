@@ -135,12 +135,13 @@ class Tooltip extends Component {
 
 Tooltip.propTypes = {
   theme: PropTypes.object,
-  position: PropTypes.oneOf(['left', 'right', 'bottom', 'top']).isRequired,
+  position: PropTypes.oneOf(['left', 'right', 'bottom', 'top']),
   content: PropTypes.any.isRequired
 };
 
 Tooltip.defaultProps = {
-  theme: defaultTheme
+  theme: defaultTheme,
+  position: 'bottom'
 };
 
 export default withTheme(Tooltip);

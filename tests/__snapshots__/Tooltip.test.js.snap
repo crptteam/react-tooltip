@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs Should renders without problems 1`] = `
+<WithTheme(Tooltip)
+  content="I am tooltip"
+  position="bottom"
+>
+  <Tooltip
+    content="I am tooltip"
+    position="bottom"
+    theme={
+      Object {
+        "Tooltip": Object {},
+      }
+    }
+  >
+    <Wrap
+      onMouseEnter={[Function]}
+      onMouseMove={[Function]}
+      onMouseOut={[Function]}
+      theme={
+        Object {
+          "Tooltip": Object {},
+        }
+      }
+    >
+      <div
+        className="Wrap-gIyiIM dfZxRk"
+        onMouseEnter={[Function]}
+        onMouseMove={[Function]}
+        onMouseOut={[Function]}
+      >
+        <TooltipWrap
+          left="50%"
+          top="calc(100% + 13px)"
+          transform="translateX(-50%)"
+          visible={false}
+        >
+          <div
+            className="TooltipWrap-jUbtui kdHKHg"
+            transform="translateX(-50%)"
+          >
+            <TopArrow>
+              <div
+                className="TopArrow-jUEHcQ fIqTSh"
+              />
+            </TopArrow>
+            <TopArrowOverlap>
+              <div
+                className="TopArrowOverlap-hfoqlJ jSEyTn"
+              />
+            </TopArrowOverlap>
+            I am tooltip
+          </div>
+        </TooltipWrap>
+        <div>
+          Hover me
+        </div>
+      </div>
+    </Wrap>
+  </Tooltip>
+</WithTheme(Tooltip)>
+`;
