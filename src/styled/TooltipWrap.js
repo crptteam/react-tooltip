@@ -16,6 +16,7 @@ export const Elem = styled.div`
   right: ${props => props.right};
   bottom: ${props => props.bottom};
   transform: ${props => props.transform};
+  z-index: ${props => props.zIndex};
 `;
 
 const TooltipWrap = props => {
