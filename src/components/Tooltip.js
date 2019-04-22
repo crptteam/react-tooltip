@@ -4,7 +4,7 @@ import { withTheme } from "styled-components";
 
 import defaultTheme from "../theme/defaultTheme";
 
-import { TooltipWrap } from "../styled/TooltipWrap";
+import TooltipWrap from "../styled/TooltipWrap";
 import { Wrap } from "../styled/Wrap";
 import { BottomArrow } from "../styled/BottomArrow";
 import { BottomArrowOverlap } from "../styled/BottomArrowOverlap";
