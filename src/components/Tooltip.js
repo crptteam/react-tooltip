@@ -110,16 +110,18 @@ class Tooltip extends Component {
   }
 
   render() {
-    const { position, children, content, ...otherProps } = this.props;
+    const { position, children, content, theme, ...otherProps } = this.props;
 
     return (
       <Wrap
+        theme={theme}
         {...otherProps}
         onMouseMove={this.onMouseMove}
         onMouseEnter={this.onMouseEnter}
         onMouseOut={this.onMouseOut}
       >
         <TooltipWrap
+          theme={theme}
           visible={this.state.visible}
           {...this.getPropsByPosition(position)}
         >
