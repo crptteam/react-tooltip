@@ -16,11 +16,11 @@ export const Elem = styled.div`
   right: ${props => props.right};
   bottom: ${props => props.bottom};
   transform: ${props => props.transform};
-  z-index: ${props => props.zIndexpa};
+  z-index: ${props => props.zIndex};
 `;
 
 const TooltipWrap = props => {
-  const merged = innerMerge({}, defaultTheme.Tooltip);
+  const merged = innerMerge({}, props.theme, defaultTheme.Tooltip);
 
   const theme = getThemeAsPlainObjectByKeys(merged);
 
