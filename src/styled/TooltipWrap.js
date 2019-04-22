@@ -20,11 +20,17 @@ export const Elem = styled.div`
 `;
 
 const TooltipWrap = props => {
-  const merged = innerMerge({}, props.theme, defaultTheme.Tooltip);
+  const { theme } = props;
 
-  const theme = getThemeAsPlainObjectByKeys(merged);
+  const merged = innerMerge(
+    {},
+    defaultTheme.Tooltip,
+    theme ? theme.Tooltip : {}
+  );
 
-  return <Elem {...theme} {...props} />;
+  const plain = getThemeAsPlainObjectByKeys(merged);
+
+  return <Elem {...plain} {...props} />;
 };
 
 export default TooltipWrap;
