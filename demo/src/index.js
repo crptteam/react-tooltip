@@ -22,7 +22,7 @@ class Demo extends Component {
   render() {
     return (
       <Wrap>
-        <Tooltip position="bottom" content={<div>Whaaat?</div>}>
+        <Tooltip position="top" content={<div>Whaaat?</div>}>
           <Hovering>HOVER MEEEE</Hovering>
         </Tooltip>
       </Wrap>
